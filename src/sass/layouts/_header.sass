@@ -1,0 +1,61 @@
+header
+		background-image: url("../img/header.jpg")
+		background-repeat: no-repeat
+		background-size: 100%
+		padding-top: 127px
+		padding-bottom: 160px
+
+		.header-circle
+				display: flex
+				flex-direction: column
+				position: relative
+				z-index: 2
+				padding-top: 105px
+				margin-bottom: 80px
+
+				&::before
+						content: url('../img/elipse.png')
+						background-repeat: no-repeat
+						background-size: cover
+						position: absolute
+						z-index: -1
+						max-height: 664px
+						max-width: 664px
+						top: 0
+						left: -145px
+
+				&__img
+						width: 242px
+						height: 72px
+						margin-bottom: 35px
+
+				&__title
+						font-family: $ffb
+						font-size: 48px
+						line-height: 60px
+						text-transform: uppercase
+						color: #82B428
+						max-width: 519px
+						margin-bottom: 18px
+
+				&__text
+						font-family: $ff
+						font-weight: 400
+						font-size: 24px
+						line-height: 110%
+						color: #2B2422
+						max-width: 403px
+						margin-bottom: 25px
+
+				button
+						background: linear-gradient(34.66deg, #BC1822 16.88%, #E53322 76%)
+						box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2)
+						border-radius: 50px
+						border: none
+						padding: 11px 21px 13px 22px
+						width: min-content
+						white-space: nowrap
+						color: #FFFFFF
+						font-size: 20px
+						line-height: 30px
+

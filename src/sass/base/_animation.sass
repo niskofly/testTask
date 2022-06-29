@@ -1,0 +1,30 @@
+.animated
+	animation-duration: .3s
+	animation-fill-mode: both
+
+
+
+.fadeInUp
+	animation-name: fadeInUp
+
+@keyframes fadeInUp
+	0%
+		opacity: 0
+		transform: translate3d(0, 10px, 0)
+
+	100%
+		opacity: 1
+		transform: none
+
+
+
+.fadeOutUp
+	animation-name: fadeOutUp
+
+@keyframes fadeOutUp
+	0%
+		opacity: 1
+
+	100%
+		opacity: 0
+		transform: translate3d(0, -20px, 0)

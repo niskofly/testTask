@@ -1,0 +1,16 @@
+mixin modals
+	.modals
+		#success-modal.modal.modal--message.modal--success.animated
+			button.modal__close.js-close-modal
+				+icon('close')
+			.modal__body
+				.modal__title.js-success-modal-title Спасибо за заявку!
+				.modal__description.js-success-modal-description Мы приняли Вашу заявку и в скором времени свяжемся с Вами.
+
+		#error-modal.modal.modal--message.modal--error.animated
+			button.modal__close.js-close-modal
+				svg.icon.icon-18
+					+icon('close')
+			.modal__body
+				.modal__title.js-error-modal-title Спасибо за заявку!
+				.modal__description.js-error-modal-description Мы приняли Вашу заявку и в скором времени свяжемся с Вами.

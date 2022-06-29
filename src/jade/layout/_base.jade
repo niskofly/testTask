@@ -1,0 +1,21 @@
+include ../tpl/_variables
+include ../tpl/_global_mixins
+include ../tpl/_mixins
+
+include ../common/_header
+include ../common/_footer
+include ../common/_modals
+
+- var array = '';
+block vars
+doctype
+html(lang="ru")
+    head
+        +head(array)
+    body.body.js-body
+        +header
+        block content_block
+
+        +footer
+        +modals
+        +scripts
